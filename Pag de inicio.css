@@ -1,40 +1,43 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
 }
 @font-face {
-  font-family: Oswald;
-  src: url(./assets/Fonts/Oswald-VariableFont_wght.ttf);
-}
+          font-family: Oswald;
+          src: url(./assets/Fonts/Oswald-VariableFont_wght.ttf);
+        }
+@font-face {
+            font-family: Raleway-regular;
+            src: url(./assets/Fonts/Raleway-Regular.ttf);
+            }
+
 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .inicio{
-    width: 85%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 133px);
-    grid-auto-rows: 200px; 
-    justify-content: center;
-    gap: 1rem;
+        width: 85%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 133px);
+        grid-auto-rows: 200px; 
+        justify-content: center;
+        gap: 1rem;
 }
 .inicio__item{
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    grid-column: span 2; /*266px + 17px = 283px */ ;
-    height: 283px;
-    transition: 0.5s filter;
+              clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+              grid-column: span 2; /*266px + 17px = 283px */ ;
+              height: 283px;
+              transition: 0.5s filter;
 }
 .inicio__item:hover{
-    filter: brightness(0.3);
+                    filter: brightness(0.3);
     
 }
 
@@ -44,98 +47,100 @@ img{
 }
 
 h1 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 183px;
-  top: 22px;
-  left: 76px;
-  color: #311ac3;
-  font-family: Oswald;
-  font-size: 128px;
-  font-weight: 600;
-  line-height: 183px;
-  text-align: left;
-  white-space: nowrap;
-        }
-
-.inicio__subtitle {
-            position: absolute;
-            bottom: 30px;
-            left: 0;
-            right: 0;
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); 
-            padding: 5px;
-        }
-
-.blue-rectangle {
-            position: absolute;
-            width: 1520px;
-            height: 30px;
-            top: 153px;
-            left: 0;
-            background: #311ac3;
-            z-index: 11;
-            }
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 183px;
+    top: 22px;
+    left: 243px;
+    color: #311ac3;
+    font-family: Oswald;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 37px;
+    text-align: left;
+    white-space: nowrap;
+  }
 
 .icon {
- position: absolute;
-  width: 80px;
-  height: auto;
-  top: 65px;
-  left: 1289px;
-  background-size: cover;
-  z-index: 4;
+          position: absolute;
+          width: 68px;
+          height: auto;
+          top: 6px;
+          left: 1289px;
+          background-size: cover;
+          z-index: 4;
 }
 
+.blue-rectangle {
+                  position: absolute;
+                  width: 1536px;
+                  height: 20px;
+                  top: 79px;
+                  left: 0;
+                  background: #311ac3;
+                  z-index: 11;
+                }
+
 .flex-row {
-  position: relative;
-  width: 913.142px;
-  height: 595px;
-  margin: 73px 0 0 234px;
-  z-index: 13;
+            position: relative;
+            width: 913.142px;
+            height: 595px;
+            margin: 0px 0 0 301px;
+            z-index: 13;
 }
+
+.inicio__subtitle {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.8); 
+                    padding: 5px;
+        }
+
+
 .clients {
-  position: absolute;
-  width: 344.858px;
-  height: 349.476px;
-  top: 0;
-  left: 401px;
-  background: url(./assets/images/clients.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 2;
+          position: absolute;
+          width: 344.858px;
+          height: 349.476px;
+          top: 0;
+          left: 401px;
+          background: url(./assets/images/clients.png)
+            no-repeat center;
+          background-size: cover;
+          z-index: 2;
 }
 .subtitle-clients {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 51px;
-  top: 241px;
-  left: 81px;
-  color: #ffffff;
-  font-family: Oswald, var(--default-font-family);
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 51px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 3;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    position: absolute;
+                    height: 51px;
+                    top: 241px;
+                    left: 81px;
+                    color: #ffffff;
+                    font-family: Oswald, var(--default-font-family);
+                    font-size: 60px;
+                    font-weight: 700;
+                    line-height: 51px;
+                    text-align: left;
+                    white-space: nowrap;
+                    z-index: 3;
 }
 
 .work {
-  position: absolute;
-  width: 465.753px;
-  height: 471.989px;
-  top: 93px;
-  left: 0;
-  background: url(./assets/images/moto\ menu.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 9;
+        position: absolute;
+        width: 465.753px;
+        height: 471.989px;
+        top: 93px;
+        left: 0;
+        background: url(./assets/images/moto\ menu.png)
+          no-repeat center;
+        background-size: cover;
+        z-index: 9;
 }
 
 .work:hover {
@@ -195,7 +200,7 @@ h1 {
   top: 106px;
   left: 50px;
   color: #ffffff;
-  font-family: Oswald, var(--default-font-family);
+  font-family: Oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 21px;
@@ -212,7 +217,7 @@ h1 {
 
 }
 .eric {
-   position: absolute;
+    position: absolute;
   width: 26.61%;
   height: 41.34%;
   top: 58.66%;
@@ -237,7 +242,7 @@ h1 {
   top: 57.23%;
   left: 24%;
   color: #ffffff;
-  font-family: Oswald, var(--default-font-family);
+  font-family: Oswald;
   font-size: 36px;
   font-weight: 700;
   line-height: 22.406px;
@@ -246,10 +251,39 @@ h1 {
   z-index: 16;
 }
 
+.menu{
+  position: absolute;
+    top: 10px;
+    left: 1353px;
+  margin: auto;
+  width: 100px;
+  font-family: Raleway-regular;
 
+}
+ul{
+  list-style: none;
+}
+.nav li a{
+background-color: #311ac3;
+color: #ffffff;
+text-decoration: none;
+display: block;
+padding: 5px 10px;
+}
 
+.nav li a:hover{
+background-color:blue
+}
 
+.nav{
+  
+  position: absolute;
+}
 
+.Icon:hover{
+      filter: brightness(0.3);
+
+}
 
 
 
