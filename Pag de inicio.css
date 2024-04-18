@@ -63,15 +63,6 @@ h1 {
     white-space: nowrap;
   }
 
-.icon {
-          position: absolute;
-          width: 68px;
-          height: auto;
-          top: 6px;
-          left: 1289px;
-          background-size: cover;
-          z-index: 4;
-}
 
 .blue-rectangle {
                   position: absolute;
@@ -250,39 +241,68 @@ h1 {
   white-space: nowrap;
   z-index: 16;
 }
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 164px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  background-image: url(./img/Icon.png);
+  width: 65px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-.menu{
-  position: absolute;
-    top: 10px;
-    left: 1353px;
-  margin: auto;
+#menuToggle a {
+  text-decoration: none;
+  color: #05FFC5;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#menuToggle input {
+  display: block;
   width: 100px;
-  font-family: Raleway-regular;
-
-}
-ul{
-  list-style: none;
-}
-.nav li a{
-background-color: #311ac3;
-color: #ffffff;
-text-decoration: none;
-display: block;
-padding: 5px 10px;
-}
-
-.nav li a:hover{
-background-color:blue
-}
-
-.nav{
-  
+  height: 80px;
   position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
 }
 
-.Icon:hover{
-      filter: brightness(0.3);
+#menu {
+  position: fixed;
+  width: 250px;
+  top: 0;
+  right: 0;
+  padding: 30px; /* Reduciendo el padding */
+  padding-top: 90px; /* Ajustando el padding-top para centrar el contenido */
+  background: #311ac3;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 100% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
 
+#menu li {
+  padding: 3px 0; /* Reduciendo el padding de los elementos li */
+  font-size: 22px;
+  line-height: 1.5; /* Ajustando la altura de línea para que el texto se ajuste mejor */
+  font-family: Raleway-regular;
+}
+
+#menuToggle input:checked ~ #menu {
+  transform: translate(0, 0);
 }
 
 
