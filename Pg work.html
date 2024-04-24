@@ -40,8 +40,9 @@
 </div>
 
        <main class="inicio">
-              <div class="inicio__item1">
+              <div id="opendialogue" class="inicio__item1">
                      <img src="./assets/images/P1.png" alt="Proyect 1">
+              </div>
               </div>
               <div class="inicio__item2">
                      <img src="./assets/images/P2.jpg" alt="Proyect 2">
@@ -71,8 +72,30 @@
                      <img src="./assets/images/P3.png" alt="Proyect 9">
               </div>
 
+<dialog id="proyecto1" class="HEXA1">
+       <button id="closedialogue" class="button">X</button>
+       <img src="./assets/images/P1.png" alt="">
+</dialog>
 
+              <script>
+              (function () {
+                     var updateButton = document.getElementById("opendialogue");
+                     var cancelButton = document.getElementById("closedialogue");
+                     var favDialog = document.getElementById("proyecto1");
+              
+                     // Update button opens a modal dialog
+                     updateButton.addEventListener("click", function () {
+                     favDialog.showModal();
+                     });
+              
+                     // Form cancel button closes the dialog box
+                     cancelButton.addEventListener("click", function () {
+                     favDialog.close();
+                     });
+              })();
+              </script>
 
-       </main>
+</main>
+
 </body>
 </html>

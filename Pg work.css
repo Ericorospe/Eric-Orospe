@@ -220,9 +220,15 @@ h1 {
 }
 
 
+.HEXA1 img{
+    width: 900px;
+    justify-content: center;
 
+}
 
-
+.button{
+    float: right;
+}
 
 
 
