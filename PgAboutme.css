@@ -145,3 +145,25 @@ h1 {
             z-index: 3;
         }
         
+/* Define la animación */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(100%); /* Desplazamiento completo hacia la derecha al inicio */
+    }
+    50% {
+        transform: translateX(0); /* Sin desplazamiento al 50% */
+    }
+    100% {
+        transform: translateX(0); /* Desplazamiento completo hacia la derecha al final */
+    }
+}
+
+/* Aplica la animación a la barra azul */
+.blue-rectangle {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 20px; /* Altura de la barra azul */
+    background-color: #311ac3; /* Color azul */
+    animation: slideAnimation 10s; /* Aplica la animación con duración de 5 segundos */
+    animation-iteration-count: 1; /* La animación se ejecuta solo una vez */
+}
+
