@@ -152,7 +152,25 @@ h1 {
     filter: brightness(0.3);
 }
 
+.inicio__item4:hover{
+    filter: brightness(0.3);
+}
+.inicio__item5:hover{
+    filter: brightness(0.3);
+}
+.inicio__item6:hover{
+    filter: brightness(0.3);
+}
 
+.inicio__item7:hover{
+    filter: brightness(0.3);
+}
+.inicio__item8:hover{
+    filter: brightness(0.3);
+}
+.inicio__item9:hover{
+    filter: brightness(0.3);
+}
 
 
     #menuToggle {
@@ -243,6 +261,7 @@ h1 {
     background-color: rgb(0, 0, 0) !important;
 
 }
+
 
 
 
