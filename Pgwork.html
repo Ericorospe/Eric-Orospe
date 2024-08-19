@@ -43,7 +43,7 @@
        <main class="inicio">
               <div id="opendialogue" class="inicio__item1">
                      <img src="./assets/images/P1.png" alt="Proyect 1">
-              </div>
+
               </div>
               <div class="inicio__item2">
                      <img src="./assets/images/P2.jpg" alt="Proyect 2">
@@ -74,8 +74,10 @@
               </div>
 
 <dialog id="proyecto1" class="HEXA1">
-       <button id="closedialogue" class="button">X</button>
-       <img src="./assets/images/P1.png" alt="">
+    <button id="closedialogue" class="button">X</button>
+    <img src="./assets/images/P1.png" alt="">
+    <button class="prev-button"><img src="./assets/images/Arrow-2.png" alt="Previous"></button>
+    <button class="next-button"><img src="./assets/images/Arrow-2.1.png" alt="Next"></button>
 </dialog>
 
               <script>
@@ -93,9 +95,19 @@
                      cancelButton.addEventListener("click", function () {
                      favDialog.close();
                      });
+                     
               })();
+
               </script>
 
+<script>
+    function showButtons(element) {
+        var prevButton = element.querySelector(".prev-button");
+        var nextButton = element.querySelector(".next-button");
+        prevButton.style.display = "block";
+        nextButton.style.display = "block";
+    }
+</script>
 
 
 </main>

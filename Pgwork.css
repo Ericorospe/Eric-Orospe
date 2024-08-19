@@ -320,6 +320,56 @@ h1 {
 }
 
 
+.prev-button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.next-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #311ac3;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-button img,
+.next-button img {
+    width: 80px; /* Ajusta el ancho según tus necesidades */
+    height: 80px; /* Ajusta la altura según tus necesidades */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
